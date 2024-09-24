@@ -72,7 +72,7 @@ export const useStore = create(
       addToFavoriteList: (type: string, id: string) =>
         set(
           produce(state => {
-            if (type == 'Coffee') {
+            if (type == 'Burger') {
               for (let i = 0; i < state.CoffeeList.length; i++) {
                 if (state.CoffeeList[i].id == id) {
                   if (state.CoffeeList[i].favourite == false) {
@@ -84,7 +84,7 @@ export const useStore = create(
                   break;
                 }
               }
-            } else if (type == 'Bean') {
+            } else if (type == 'Drinks') {
               for (let i = 0; i < state.BeanList.length; i++) {
                 if (state.BeanList[i].id == id) {
                   if (state.BeanList[i].favourite == false) {
@@ -102,7 +102,7 @@ export const useStore = create(
       deleteFromFavoriteList: (type: string, id: string) =>
         set(
           produce(state => {
-            if (type == 'Coffee') {
+            if (type == 'Burger') {
               for (let i = 0; i < state.CoffeeList.length; i++) {
                 if (state.CoffeeList[i].id == id) {
                   if (state.CoffeeList[i].favourite == true) {
@@ -113,7 +113,7 @@ export const useStore = create(
                   break;
                 }
               }
-            } else if (type == 'Beans') {
+            } else if (type == 'Drinks') {
               for (let i = 0; i < state.BeanList.length; i++) {
                 if (state.BeanList[i].id == id) {
                   if (state.BeanList[i].favourite == true) {
@@ -207,6 +207,7 @@ export const useStore = create(
             state.CartList = [];
           }),
         ),
+
     }),
     {
       name: 'coffee-app',

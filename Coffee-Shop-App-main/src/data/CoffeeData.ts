@@ -360,4 +360,6 @@ const CoffeeData = [
     index: 17,
   },
 ];
+
+
 export default CoffeeData;

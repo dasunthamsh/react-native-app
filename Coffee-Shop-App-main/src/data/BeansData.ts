@@ -1,11 +1,13 @@
+import CoffeeData from "./CoffeeData";
+
 const BeansData = [
   {
     id: 'B1',
     name: ' Strawberry Latte',
     description: `This iced strawberry matcha latte combines fresh strawberries with earthy matcha. Lightly sweet and SO refreshing, it's the perfect drink for a hot day.`,
     roasted: 'cool and fresh',
-    imagelink_square: require('../assets/coffee_assets/burger/b11.png'),
-    imagelink_portrait: require('../assets/coffee_assets/burger/b11.png'),
+    imagelink_square: require('../assets/coffee_assets/burger/d1.png'),
+    imagelink_portrait: require('../assets/coffee_assets/burger/d1.png'),
     ingredients: 'Strawberry',
     special_ingredient: 'With chilli ice cream',
     prices: [
@@ -80,6 +82,5 @@ const BeansData = [
     index: 3,
   },
 ];
-
 
 export default BeansData;

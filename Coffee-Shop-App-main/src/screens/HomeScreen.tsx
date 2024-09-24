@@ -120,6 +120,7 @@ const HomeScreen = ({navigation}: any) => {
       ToastAndroid.CENTER,
     );
   };
+  console.log(BeanList)
 
   return (
     <View style={styles.ScreenContainer}>
