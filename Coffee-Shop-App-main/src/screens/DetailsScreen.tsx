@@ -21,7 +21,7 @@ import PaymentFooter from '../components/PaymentFooter';
 
 const DetailsScreen = ({navigation, route}: any) => {
   const ItemOfIndex = useStore((state: any) =>
-    route.params.type == 'Coffee' ? state.CoffeeList : state.BeanList,
+    route.params.type == 'Burger' ? state.CoffeeList : state.BeanList,
   )[route.params.index];
   const addToFavoriteList = useStore((state: any) => state.addToFavoriteList);
   const deleteFromFavoriteList = useStore(
@@ -130,7 +130,7 @@ const DetailsScreen = ({navigation, route}: any) => {
                     styles.SizeText,
                     {
                       fontSize:
-                        ItemOfIndex.type == 'Bean'
+                        ItemOfIndex.type == 'Drinks'
                           ? FONTSIZE.size_14
                           : FONTSIZE.size_16,
                       color:

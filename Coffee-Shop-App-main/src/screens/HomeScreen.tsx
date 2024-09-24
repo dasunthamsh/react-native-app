@@ -261,7 +261,7 @@ const HomeScreen = ({navigation}: any) => {
           }}
         />
 
-        <Text style={styles.CoffeeBeansTitle}>Best Offers</Text>
+        <Text style={styles.CoffeeBeansTitle}>Drinks</Text>
 
         {/* Beans Flatlist */}
 
